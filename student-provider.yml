@@ -1,0 +1,36 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: student-provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/p8_student?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: 960907
+    type: com.alibaba.druid.pool.DruidDataSource
+   #配置rabbitMq
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    virtual-host: /
+    #手动ack
+    listener:
+      direct:
+      #设置三种订阅模式手动ack
+        acknowledge-mode: manual
+      #设置work消息类型手动ack
+      simple:
+        acknowledge-mode: manual
+#mybatis:
+#  type-aliases-package: com.usian.student
+mapper:
+  #公用接口类路径
+  mappers: com.usian.dao.StudentDao
+
+  identity: MYSQL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

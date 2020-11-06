@@ -1,0 +1,22 @@
+server:
+  port: 7788
+spring:
+  application:
+    name: user-provider
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/p8_student?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: 960907
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis:
+#  type-aliases-package: com.usian.student
+mapper:
+  #公用接口类路径
+  mappers: com.usian.dao.UserDao
+  identity: MYSQL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

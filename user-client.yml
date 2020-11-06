@@ -1,0 +1,28 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 6677
+spring:
+  application:
+    name: user-client
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/p8_student?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: 960907
+  redis:
+      database: 0
+      host: localhost
+      port: 6379
+      password:
+# 开启feign 对hystrix的使用
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+    # 指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 5000
+      # 指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所有时间
+  ReadTimeout: 5000
