@@ -9,11 +9,11 @@ spring:
     username: root
     password: 960907
     type: com.alibaba.druid.pool.DruidDataSource
-  #rabbitmq:
-    #host: localhost
-    #username: admin
-    #password: 123
-    #virtual-host: /roy
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: 123
+    virtual-host: /roy
 
 #mybatis:
 #  type-aliases-package: com.usian.student
