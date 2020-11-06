@@ -12,9 +12,9 @@ spring:
    #配置rabbitMq
   rabbitmq:
     host: localhost
-    username: guest
-    password: guest
-    virtual-host: /
+    username: admin
+    password: 111
+    virtual-host: /roy
     #手动ack
     listener:
       direct:
