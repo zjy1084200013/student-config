@@ -14,7 +14,6 @@ spring:
     host: localhost
     username: admin
     password: 123
-    virtual-host: /roy
 
 #mybatis:
 #  type-aliases-package: com.usian.student
