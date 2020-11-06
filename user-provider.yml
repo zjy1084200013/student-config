@@ -11,9 +11,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
   rabbitmq:
     host: localhost
-    username: guest
-    password: guest
-    virtual-host: /
+    username: admin
+    password: 123
+    virtual-host: /roy
 
 #mybatis:
 #  type-aliases-package: com.usian.student
