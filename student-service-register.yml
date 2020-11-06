@@ -15,4 +15,4 @@ spring:
      host: localhost
      username: admin
      password: 123
-     virtual-host: /usian
+     virtual-host: /roy
