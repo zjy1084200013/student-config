@@ -14,7 +14,6 @@ spring:
      username: admin
      password: 123
      port: 5672
-     virtual-host: /roy
 #设置注册中心的地址
 eureka:
   client:
