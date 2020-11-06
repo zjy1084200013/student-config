@@ -17,13 +17,13 @@ spring:
     password: guest
     virtual-host: /
     #手动ack
-    listener:
-      direct:
+  listener:
+    direct:
       #设置三种订阅模式手动ack
-        acknowledge-mode: manual
+      acknowledge-mode: manual
       #设置work消息类型手动ack
-      simple:
-        acknowledge-mode: manual
+    simple:
+      acknowledge-mode: manual
 #mybatis:
 #  type-aliases-package: com.usian.student
 mapper:
