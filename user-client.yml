@@ -17,11 +17,11 @@ spring:
       host: localhost
       port: 6379
       password:
-  rabbitmq:
-    host: localhost
-    username: admin
-    password: 123
-    virtual-host: /roy
+  #rabbitmq:
+   # host: localhost
+   # username: admin
+    #password: 123
+   # virtual-host: /roy
 # 开启feign 对hystrix的使用
 feign:
   hystrix:
