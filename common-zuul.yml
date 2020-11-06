@@ -12,7 +12,7 @@ spring:
   rabbitmq:
      host: localhost
      username: admin
-     password: 111
+     password: 123
      virtual-host: /roy
 #设置注册中心的地址
 eureka:
