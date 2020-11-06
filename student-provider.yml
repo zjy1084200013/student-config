@@ -15,7 +15,6 @@ spring:
     username: admin
     password: 123
     port: 5672
-    virtual-host: /roy
     #手动ack
     listener:
       direct:
