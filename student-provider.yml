@@ -10,11 +10,11 @@ spring:
     password: 960907
     type: com.alibaba.druid.pool.DruidDataSource
    #配置rabbitMq
-  rabbitmq:
-    host: localhost
-    username: admin
-    password: 123
-    port: 5672
+  #rabbitmq:
+   # host: localhost
+    #username: admin
+   # password: 123
+    #port: 5672
     #手动ack
     listener:
       direct:
