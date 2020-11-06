@@ -9,3 +9,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka/
+spring:
+  rabbitmq:
+     host: localhost
+     username: admin
+     password: 111
+     virtual-host: /usian
