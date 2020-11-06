@@ -10,6 +10,7 @@ spring:
     password: 960907
     type: com.alibaba.druid.pool.DruidDataSource
   rabbitmq:
+    port: 5672
     host: localhost
     username: admin
     password: 123
