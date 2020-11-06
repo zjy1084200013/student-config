@@ -22,7 +22,6 @@ spring:
     port: 5672
     username: admin
     password: 123
-    virtual-host: /roy
 # 开启feign 对hystrix的使用
 feign:
   hystrix:
